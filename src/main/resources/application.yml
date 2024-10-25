@@ -1,0 +1,18 @@
+#spring.application.name=demo
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/project
+    password: 1234
+    username: postgres
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    generate-ddl: true
+    show-sql: true
+  hibernate:
+    ddl-auto: update
+  properties:
+    hibernate:
+      globally_quoted_identifiers: true
+      hibernate.dialect: org.hibernate.dialect.PostgreSQL94Dialect
+      format_sql: true
